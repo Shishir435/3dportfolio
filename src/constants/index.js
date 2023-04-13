@@ -183,6 +183,32 @@ const projects = [
     live_demo_link: 'https://cloneyoutubeap.netlify.app/',
   },
   {
+    name: 'Google Search clone',
+    index: 4,
+    description:
+      'A fully responsive search engine like Google allows users to search for anything.',
+    tags: [
+      {
+        id: 10,
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        id: 11,
+        name: 'googlecustomapi',
+        color: 'green-text-gradient',
+      },
+      {
+        id: 12,
+        name: 'material ui',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: googleClone,
+    source_code_link: 'https://github.com/Shishir435/Google-Clone',
+    live_demo_link: 'https://googlezclone.netlify.app/',
+  },
+  {
     name: 'Weather App',
     index: 2,
     description:
@@ -234,56 +260,31 @@ const projects = [
     source_code_link: 'https://github.com/Shishir435/todo',
     live_demo_link: 'https://listsv1.onrender.com/',
   },
-  {
-    name: 'Google Search clone',
-    index: 4,
-    description:
-      'A todo list app that allows users to add and delete items. You can also create multiple lists and see all indexes in the all lists section.',
-    tags: [
-      {
-        id: 10,
-        name: 'express',
-        color: 'blue-text-gradient',
-      },
-      {
-        id: 11,
-        name: 'mongodb',
-        color: 'green-text-gradient',
-      },
-      {
-        id: 12,
-        name: 'ejs',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: googleClone,
-    source_code_link: 'https://github.com/Shishir435/todo',
-    live_demo_link: 'https://googlezclone.netlify.app/',
-  },
+
   {
     name: 'Signup-form',
     index: 5,
     description:
-      'A todo list app that allows users to add and delete items. You can also create multiple lists and see all indexes in the all lists section.',
+      'A signup form with a validation based on roll no and password',
     tags: [
       {
         id: 13,
-        name: 'express',
+        name: 'React',
         color: 'blue-text-gradient',
       },
       {
         id: 14,
-        name: 'mongodb',
+        name: 'firebase',
         color: 'green-text-gradient',
       },
       {
         id: 15,
-        name: 'ejs',
+        name: 'materialui',
         color: 'pink-text-gradient',
       },
     ],
     image: signupForm,
-    source_code_link: 'https://github.com/Shishir435/todo',
+    source_code_link: 'https://github.com/Shishir435/loginForm',
     live_demo_link: 'https://fir-auth-9e239.web.app/',
   },
 ]
