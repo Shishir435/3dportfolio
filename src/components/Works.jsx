@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 import React from "react";
-import Tilt from "react-tilt";
 import { styles } from "../styles";
 import { github, website } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import { nanoid } from "nanoid";
 
 const ProjectCard = ({
   index,
@@ -19,7 +19,7 @@ const ProjectCard = ({
   return (
 
     <div className="bg-tertiary p-1 rounded-2xl sm:w-[360px] w-full">
-      <div className="relative w-full h-[230px]">
+      <div className="relative w-[100%] h-[230px]">
         <img
           src={image}
           alt={name}
@@ -49,12 +49,12 @@ const ProjectCard = ({
         </div>
       </div>
       <div className="mt-5">
-        <h3 className="text-white font-bold text-[24px]">{name}</h3>
+        <h3 className="text-[#0056d2] font-bold text-[24px]">{name}</h3>
         <p className="mt-2 text-secondary text-[14px]">{description}</p>
       </div>
       <div className="mt-4 flex flex-wrap gap-2">
-        {tags.map((tag, id) => (
-          <p key={id} className={`text-[14px] ${tag.color}`}>
+        {tags.map((tag) => (
+          <p key={nanoid()} className={`text-[14px] ${tag.color}`}>
             #{tag.name}
           </p>
         ))}
@@ -66,7 +66,7 @@ const ProjectCard = ({
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div id="works" variants={textVariant()}>
         <p className={styles.sectionSubText}>My Works</p>
         <h2 className={styles.sectionHeadText}>Projects</h2>
       </motion.div>
@@ -82,11 +82,11 @@ const Works = () => {
       </div>
       <div className="mt-20 flex flex-wrap gap-5 ">
         {projects.map((project, index) => (
-          <ProjectCard key={`project.${index}`} index={index} {...project} />
+          <ProjectCard key={nanoid()} index={index} {...project} />
         ))}
       </div>
     </>
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "works");

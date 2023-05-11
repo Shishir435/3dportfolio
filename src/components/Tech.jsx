@@ -1,14 +1,14 @@
 import React from 'react'
 import { technologies } from '../constants'
 import { SectionWrapper } from '../hoc'
-import { BallCanvas } from './canvas'
+import TechCard from './TechCard'
 
 const Tech = () => {
   return (
-    <div className='flex flex-row flex-wrap justify-center gap-10'>
-      {technologies.map((technology)=>(
-        <div className='w-28 h-28'  key={technology.name}>
-            <BallCanvas icon={technology.icon}/>
+    <div className='flex flex-row flex-wrap justify-center  '>
+      {technologies.map((technology) => (
+        <div className='w-20 h-20 m-5' key={technology.name}>
+          <TechCard name={technology.name} icon={technology.icon} />
         </div>
       ))}
     </div>

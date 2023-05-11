@@ -25,13 +25,11 @@ import redux from './tech/redux.png'
 import tailwind from './tech/tailwind.png'
 import express from './tech/expressjs.png'
 import bootstrap from './tech/bootstrap.png'
-import threejs from './tech/threejs.svg'
+import threejs from './tech/threejs.png'
 
 import backEnd from './service/backEnd.png'
 import frontEnd from './service/frontEnd.png'
 import webDesign from './service/webDesign.png'
-
-import carrent from './carrent.png'
 
 export {
   logo,
@@ -58,7 +56,6 @@ export {
   webDesign,
   frontEnd,
   backEnd,
-  carrent,
   todo,
   youtubeClone,
   weatherApp,

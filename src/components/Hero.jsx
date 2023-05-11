@@ -1,46 +1,51 @@
 import { motion } from 'framer-motion'
 import React from 'react'
-import { styles } from '../styles'
-// import { ComputersCanvas } from './canvas'
-
+import { styles, mainColor } from '../styles'
+import './Hero.css'
+import { SectionWrapper } from "../hoc";
+import { BsLinkedin } from 'react-icons/bs'
+import { BsInstagram } from 'react-icons/bs'
+import { BsGithub } from 'react-icons/bs'
 const Hero = () => {
   return (
     <section style={{ height: '100vh', marginTop: '-50px' }} className='relative w-full h-screen mx-auto'>
-      <div className={`${styles.paddingX} absolute inset-0  top-[130px] max-w-7xl  flex flex-row items-start gap-5`}>
-        <div className='flex relative left-[20%] flex-col  justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
-          <div className='w-1 sm:h-80 h-40 violet-gradient' />
-        </div>
-        <div className={`${styles.heroHeadText} text-white mt-[-30px]`}>
-          <h1>Hi, I'm <span className='text-[#915eff]'>Shishir</span></h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop user <br className='sm:block hidden' />
+
+      < div className={`${styles.heroHeadText} relative text-white  p-2`}>
+        <div className='absolute heroContent text-left'>
+          <h1 >Hi, I'm <span className={`text-[${mainColor}]`}>Shishir</span></h1>
+          <p className={`${styles.heroSubText} text-secondary`}>
+            I develop user
             interfaces and web applications
           </p>
-        </div>
-      </div>
-      {/* <ComputersCanvas /> */}
 
-      <div style={{ bottom: '-20px', zIndex: '15' }} className='absolute xs:bottom-10  w-full flex justify-center cursor-pointer items-center '>
-        <a href="#about">
-          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center cursor-pointer items-start p-2'
+          <div className={`header__socials text-[${mainColor}]`}>
+            <a href="https://www.linkedin.com/in/shishir-chaurasiya/" target='_blank' rel="noopener noreferrer"><BsLinkedin /></a>
+            <a href="https://www.instagram.com/_shishir435/" target='_blank' rel="noopener noreferrer"><BsInstagram /></a>
+            <a href="https://github.com/Shishir435" target='_blank' rel="noopener noreferrer"><BsGithub /></a>
+          </div>
+        </div>
+      </div >
+
+      <div style={{ zIndex: '15' }} className='absolute top-[82vh]   w-full flex justify-center cursor-pointer items-center '>
+        <a href="#works">
+          <div className={`w-[35px] h-[64px] rotate-90 rounded-3xl border-4 border-[#0056d2] flex justify-center cursor-pointer items-start `}
           >
             <motion.div animate={{
-              y: [0, 24, 0]
+              y: [0, 20, 0]
             }}
               transition={{
                 duration: 1.5,
                 repeat: Infinity,
                 repeatType: 'loop',
               }}
-              className="w-3 h-3 rounded-full bg-secondary mb-1">
+              className={`w-3 h-3 rounded-full bg-[#0056d2]`}>
 
             </motion.div>
           </div>
         </a>
       </div>
-    </section>
+    </section >
   )
 }
 
-export default Hero
+export default SectionWrapper(Hero, "#")

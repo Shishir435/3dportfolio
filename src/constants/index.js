@@ -35,27 +35,12 @@ export const navLinks = [
     title: 'Service',
   },
   {
+    id: 'works',
+    title: 'work',
+  },
+  {
     id: 'contact',
     title: 'Contact',
-  },
-]
-
-const services = [
-  {
-    title: 'Web Developer',
-    icon: web,
-  },
-  // {
-  //   title: "React Native Developer",
-  //   icon: mobile,
-  // },
-  {
-    title: 'Backend Developer',
-    icon: backend,
-  },
-  {
-    title: 'Web Designer',
-    icon: creator,
   },
 ]
 
@@ -114,7 +99,7 @@ const technologies = [
   },
 ]
 
-const experiences = [
+const services = [
   {
     title: 'Front-End Developer',
 
@@ -133,7 +118,8 @@ const experiences = [
     title: 'Back-end Developer',
 
     icon: backEnd,
-    iconBg: '#E6DEDD',
+    iconBg: '#383E56',
+    // iconBg: '#E6DEDD',
     points: [
       'Database creation, integration, and management.',
       'Back-end frameworks to build server-side software.',
@@ -148,7 +134,7 @@ const experiences = [
     iconBg: '#383E56',
     points: [
       ' frames a solution or strategy to deliver the best experience to the user.',
-      'Create user flows, wireframes, prototypes, low-fidelity mockups, and high-fidelity mockups.',
+      'Create user flows, wire frames, prototypes, low-fidelity mockups, and high-fidelity mockups.',
       'Implementing responsive design and ensuring cross-browser compatibility.',
       'Create user-centered designs based on customer voices, user journeys, feedback, and usability discoveries.',
     ],
@@ -163,18 +149,15 @@ const projects = [
       'Api-based clone application for searching and watching YouTube videos. It also has a sidebar with various video categories.',
     tags: [
       {
-        id: 4,
         name: 'react',
         color: 'blue-text-gradient',
       },
       {
-        id: 5,
-        name: 'rapidapi',
+        name: 'rapidApi',
         color: 'green-text-gradient',
       },
       {
-        id: 6,
-        name: 'materialui',
+        name: 'materialUi',
         color: 'pink-text-gradient',
       },
     ],
@@ -183,24 +166,21 @@ const projects = [
     live_demo_link: 'https://cloneyoutubeap.netlify.app/',
   },
   {
-    name: 'Google Search clone',
+    name: 'Google Search Clone',
     index: 4,
     description:
-      'A fully responsive search engine like Google allows users to search for anything.',
+      'A fully responsive search engine like Google chrome tab allows users to search for anything.',
     tags: [
       {
-        id: 10,
         name: 'react',
         color: 'blue-text-gradient',
       },
       {
-        id: 11,
-        name: 'googlecustomapi',
+        name: 'googleCustomApi',
         color: 'green-text-gradient',
       },
       {
-        id: 12,
-        name: 'material ui',
+        name: 'materialUi',
         color: 'pink-text-gradient',
       },
     ],
@@ -215,18 +195,15 @@ const projects = [
       'A web application allows users to search the weather of any city worldwide and see the forecast for the next seven days.',
     tags: [
       {
-        id: 1,
         name: 'react',
         color: 'blue-text-gradient',
       },
       {
-        id: 2,
-        name: 'rapidapi',
+        name: 'rapidApi',
         color: 'green-text-gradient',
       },
       {
-        id: 3,
-        name: 'swiperjs',
+        name: 'openWeatherApi',
         color: 'pink-text-gradient',
       },
     ],
@@ -241,17 +218,14 @@ const projects = [
       'A todo list app that allows users to add and delete items. You can also create multiple lists and see all indexes in the all lists section.',
     tags: [
       {
-        id: 7,
         name: 'express',
         color: 'blue-text-gradient',
       },
       {
-        id: 8,
         name: 'mongodb',
         color: 'green-text-gradient',
       },
       {
-        id: 9,
         name: 'ejs',
         color: 'pink-text-gradient',
       },
@@ -262,24 +236,21 @@ const projects = [
   },
 
   {
-    name: 'Signup-form',
+    name: 'Signup Form',
     index: 5,
     description:
       'A signup form with a validation based on roll no and password',
     tags: [
       {
-        id: 13,
         name: 'React',
         color: 'blue-text-gradient',
       },
       {
-        id: 14,
         name: 'firebase',
         color: 'green-text-gradient',
       },
       {
-        id: 15,
-        name: 'materialui',
+        name: 'materialUi',
         color: 'pink-text-gradient',
       },
     ],
@@ -289,4 +260,4 @@ const projects = [
   },
 ]
 
-export { services, technologies, experiences, projects }
+export { services, technologies, projects }
