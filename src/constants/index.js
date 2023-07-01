@@ -1,28 +1,16 @@
+
 import {
-  backend,
-  creator,
-  web,
-  javascript,
-  html,
-  css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  express,
-  bootstrap,
-  threejs,
+ 
   frontEnd,
   backEnd,
   webDesign,
+  
   weatherApp,
   youtubeClone,
   todo,
   googleClone,
-  signupForm,
+  coinMinder,
+  verbVoyage
 } from '../assets'
 
 export const navLinks = [
@@ -47,55 +35,55 @@ export const navLinks = [
 const technologies = [
   {
     name: 'HTML 5',
-    icon: html,
+    icon: "https://img.icons8.com/color/96/html-5--v1.png",
   },
   {
     name: 'CSS 3',
-    icon: css,
+    icon: "https://img.icons8.com/color/96/css3.png",
   },
   {
     name: 'JavaScript',
-    icon: javascript,
+    icon: "https://img.icons8.com/fluency/96/javascript.png",
   },
   {
     name: 'React JS',
-    icon: reactjs,
+    icon: "https://img.icons8.com/office/80/000000/react.png",
   },
   {
     name: 'Redux Toolkit',
-    icon: redux,
+    icon: "https://img.icons8.com/color/96/redux.png",
+  },
+  {
+    name: 'Angular',
+    icon: "https://img.icons8.com/color/96/angularjs.png",
+  },
+  {
+    name: 'Typescript',
+    icon: "https://img.icons8.com/color/96/typescript.png",
   },
   {
     name: 'Tailwind CSS',
-    icon: tailwind,
+    icon: "https://img.icons8.com/color/96/tailwind_css.png",
   },
   {
-    name: 'bootstap',
-    icon: bootstrap,
+    name: 'Bootstrap',
+    icon: "https://img.icons8.com/color/96/bootstrap.png",
   },
   {
     name: 'Express',
-    icon: express,
+    icon: "https://img.icons8.com/nolan/96/express-js.png",
   },
   {
     name: 'Node JS',
-    icon: nodejs,
+    icon: "https://img.icons8.com/fluency/96/node-js.png",
   },
   {
     name: 'MongoDB',
-    icon: mongodb,
-  },
-  {
-    name: 'Three JS',
-    icon: threejs,
+    icon: "https://img.icons8.com/color/96/mongodb.png",
   },
   {
     name: 'git',
-    icon: git,
-  },
-  {
-    name: 'figma',
-    icon: figma,
+    icon: "https://img.icons8.com/color/96/git.png",
   },
 ]
 
@@ -143,8 +131,45 @@ const services = [
 
 const projects = [
   {
-    name: 'YouTube Clone',
-    index: 1,
+    name: 'VerbVoyage',
+    img: verbVoyage,
+    description:
+      'A Next.js app with post management, profile visibility, tagging, search, secure authentication (OAuth, NextAuth), MongoDB.',
+    tags: [
+      {
+        name: 'mern',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'nextJS',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'nextAuth',
+        color: 'pink-text-gradient',
+      },
+    ],
+    source_code_link: 'https://github.com/Shishir435/Verbvoyage',
+    live_demo_link: 'https://verbvoyage.vercel.app/',
+  },
+  {
+    name: 'CoinMinder',
+    img: coinMinder,
+    description:
+      'Expense management app with MongoDB, React, Node, and Express.Efficient filtering by date. User-friendly interface for financial analysis.',
+    tags: [
+      {
+        name: 'mern',
+        color: 'blue-text-gradient',
+      },
+  
+    ],
+    source_code_link: 'https://github.com/Shishir435/coinMinder',
+    live_demo_link: 'https://wandering-erin-nightingale.cyclic.app/login',
+  },
+  {
+    name: 'YouTubeClone',
+    img: youtubeClone,
     description:
       'Api-based clone application for searching and watching YouTube videos. It also has a sidebar with various video categories.',
     tags: [
@@ -161,13 +186,12 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: youtubeClone,
     source_code_link: 'https://github.com/Shishir435/youtube-clone',
     live_demo_link: 'https://cloneyoutubeap.netlify.app/',
   },
   {
-    name: 'Google Search Clone',
-    index: 4,
+    name: 'GoogleSearchClone',
+    img: googleClone,
     description:
       'A fully responsive search engine like Google chrome tab allows users to search for anything.',
     tags: [
@@ -184,13 +208,12 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: googleClone,
     source_code_link: 'https://github.com/Shishir435/Google-Clone',
     live_demo_link: 'https://googlezclone.netlify.app/',
   },
   {
-    name: 'Weather App',
-    index: 2,
+    name: 'WeatherApp',
+    img: weatherApp,
     description:
       'A web application allows users to search the weather of any city worldwide and see the forecast for the next seven days.',
     tags: [
@@ -207,13 +230,12 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: weatherApp,
     source_code_link: 'https://github.com/Shishir435/Weather-app/',
     live_demo_link: 'https://shishir-weather-app.netlify.app/',
   },
   {
-    name: 'Todo List',
-    index: 3,
+    name: 'TodoList',
+    img: todo,
     description:
       'A todo list app that allows users to add and delete items. You can also create multiple lists and see all indexes in the all lists section.',
     tags: [
@@ -230,34 +252,31 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: todo,
     source_code_link: 'https://github.com/Shishir435/todo',
     live_demo_link: 'https://listsv1.onrender.com/',
   },
 
-  {
-    name: 'Signup Form',
-    index: 5,
-    description:
-      'A signup form with a validation based on roll no and password',
-    tags: [
-      {
-        name: 'React',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'firebase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'materialUi',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: signupForm,
-    source_code_link: 'https://github.com/Shishir435/loginForm',
-    live_demo_link: 'https://fir-auth-9e239.web.app/',
-  },
+  // {
+  //   name: 'Signup Form',
+  //   description:
+  //     'A signup form with a validation based on roll no and password',
+  //   tags: [
+  //     {
+  //       name: 'React',
+  //       color: 'blue-text-gradient',
+  //     },
+  //     {
+  //       name: 'firebase',
+  //       color: 'green-text-gradient',
+  //     },
+  //     {
+  //       name: 'materialUi',
+  //       color: 'pink-text-gradient',
+  //     },
+  //   ],
+  //   source_code_link: 'https://github.com/Shishir435/loginForm',
+  //   live_demo_link: 'https://fir-auth-9e239.web.app/',
+  // },
 ]
 
 export { services, technologies, projects }

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
-import Tilt from "react-tilt";
+
 import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
@@ -18,11 +18,6 @@ const About = () => {
       >
         Hello, my name is Shishir Chaurasiya, and I am starting a career in Web Designing and Development. I enjoy creating interactive and responsive websites. Please get in touch with me if you have any suggestions.
       </motion.p>
-      {/* <div className="mt-20 flex flex-wrap gap-10">
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
-      </div> */}
     </div>
   );
 };

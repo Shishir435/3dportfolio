@@ -8,23 +8,24 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { nanoid } from "nanoid";
 
 const ProjectCard = ({
-  index,
   name,
+  img,
   description,
   tags,
-  image,
   source_code_link,
   live_demo_link,
 }) => {
   return (
-
-    <div className="bg-tertiary p-1 rounded-2xl sm:w-[360px] w-full">
-      <div className="relative w-[100%] h-[230px]">
+    <div className="bg-tertiary p-1 rounded-xl ">
+      <div className="relative">
         <img
-          src={image}
+          src={img}
           alt={name}
-          className="w-[98%] h-full object-fill rounded-2xl"
+          width="300"
+          height="250"
+          className="w-full object-fill rounded-xl"
         />
+        {/* <iframe title={name} src={live_demo_link} width="100%" height='400' className="w-full h-full object-fill rounded-2xl" loading="lazy"  allow="fullscreen"  ></iframe> */}
         <div className="absolute inset-0 flex justify-between m-3 card-img_hover">
           <div
             onClick={() => window.open(source_code_link, "_blank")}
@@ -35,7 +36,7 @@ const ProjectCard = ({
               alt="github"
               className="w-1/2 h=1/2 object-contain"
             />
-          </div>{" "}
+          </div>
           <div
             onClick={() => window.open(live_demo_link, "_blank")}
             className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
@@ -48,18 +49,17 @@ const ProjectCard = ({
           </div>
         </div>
       </div>
-      <div className="mt-5">
+      <div className="mt-5 px-4">
         <h3 className="text-[#0056d2] font-bold text-[24px]">{name}</h3>
         <p className="mt-2 text-secondary text-[14px]">{description}</p>
       </div>
-      <div className="mt-4 flex flex-wrap gap-2">
+      <div className="my-4 px-4 flex flex-wrap gap-2">
         {tags.map((tag) => (
           <p key={nanoid()} className={`text-[14px] ${tag.color}`}>
             #{tag.name}
           </p>
         ))}
       </div>
-
     </div>
   );
 };
@@ -80,7 +80,7 @@ const Works = () => {
           and links to code repositories and live demos.
         </motion.p>
       </div>
-      <div className="mt-20 flex flex-wrap gap-5 ">
+      <div className="mt-20 grid grid-cols-1 sm:grid-cols-1  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 ">
         {projects.map((project, index) => (
           <ProjectCard key={nanoid()} index={index} {...project} />
         ))}
