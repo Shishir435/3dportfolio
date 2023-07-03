@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+
 import React from "react";
 import { styles } from "../styles";
 import { github, website } from "../assets";
@@ -23,6 +23,7 @@ const ProjectCard = ({
           alt={name}
           width="300"
           height="250"
+          loading="lazy"
           className="w-full object-fill rounded-xl"
         />
         {/* <iframe title={name} src={live_demo_link} width="100%" height='400' className="w-full h-full object-fill rounded-2xl" loading="lazy"  allow="fullscreen"  ></iframe> */}
@@ -66,19 +67,19 @@ const ProjectCard = ({
 const Works = () => {
   return (
     <>
-      <motion.div id="works" variants={textVariant()}>
+      <div id="works" variants={textVariant()}>
         <p className={styles.sectionSubText}>My Works</p>
         <h2 className={styles.sectionHeadText}>Projects</h2>
-      </motion.div>
+      </div>
       <div className="w-full flex">
-        <motion.p
+        <p
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           The projects listed below demonstrate my abilities and skills through
           real-world examples of my work. Each project has a brief description
           and links to code repositories and live demos.
-        </motion.p>
+        </p>
       </div>
       <div className="mt-20 grid grid-cols-1 sm:grid-cols-1  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 ">
         {projects.map((project, index) => (

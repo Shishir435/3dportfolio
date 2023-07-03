@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+
 import React from 'react'
 import { styles, mainColor } from '../styles'
 import './Hero.css'
@@ -25,25 +25,6 @@ const Hero = () => {
           </div>
         </div>
       </div >
-
-      <div style={{ zIndex: '15' }} className='absolute top-[82vh]   w-full flex justify-center cursor-pointer items-center '>
-        <a href="#works">
-          <div className={`w-[35px] h-[64px] rotate-90 rounded-3xl border-4 border-[#0056d2] hover:scale-125 flex justify-center cursor-pointer items-start `}
-          >
-            <motion.div animate={{
-              y: [0, 20, 0]
-            }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                repeatType: 'loop',
-              }}
-              className={`w-3 h-3 rounded-full bg-[#0056d2]`}>
-
-            </motion.div>
-          </div>
-        </a>
-      </div>
     </section >
   )
 }

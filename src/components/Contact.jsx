@@ -1,11 +1,9 @@
 import React, { useRef, useState } from "react";
-import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
-import { slideIn } from "../utils/motion";
 import './Contact.css'
 const Contact = () => {
   const formRef = useRef();
@@ -68,8 +66,8 @@ const Contact = () => {
     <div
       className={`xl:mt-12 contact mb-15 gap-10 overflow-hidden`}>
 
-      <motion.div
-        variants={slideIn("left", "tween", 0.2, 1)}
+      <div
+       
         className="flex-[1] max-h-fit contactForm bg-black-100 p-8 rounded-2xl"
       >
         <p className={styles.sectionSubText}>Get in touch</p>
@@ -124,14 +122,13 @@ const Contact = () => {
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
-      </motion.div>
+      </div>
 
-      <motion.div
-        variants={slideIn("right", "tween", 0.2, 1)}
+      <div
         className="xl:flex-1  earthCanvas xl:h-auto md:h-[550px] h-[350px]"
       >
         <EarthCanvas />
-      </motion.div>
+      </div>
     </div>
   );
 };
