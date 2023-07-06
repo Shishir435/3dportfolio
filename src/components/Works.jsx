@@ -34,7 +34,7 @@ const ProjectCard = ({
           >
             <img
               src={github}
-              alt="github"
+              alt="github_link"
               height="40"
               width="40"
               className="w-1/2 h-1/2 object-contain"
@@ -46,7 +46,7 @@ const ProjectCard = ({
           >
             <img
               src={website}
-              alt="website"
+              alt="website_link"
               height="40"
               width="40"
               className="w-1/2 h-1/2 object-contain"
@@ -56,7 +56,7 @@ const ProjectCard = ({
       </div>
       <div className="mt-5 px-4">
         <h3 className="text-[#0056d2] font-bold text-[24px]">{name}</h3>
-        <p className="mt-2 text-secondary text-[14px]">{description}</p>
+        <p className="mt-2 text-white text-[14px]">{description}</p>
       </div>
       <div className="my-4 px-4 flex flex-wrap gap-2">
         {tags.map((tag) => (
@@ -78,7 +78,7 @@ const Works = () => {
       <div className="w-full flex">
         <p
          
-          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
+          className="mt-3 text-gray-100 text-[17px] max-w-3xl leading-[30px]"
         >
           The projects listed below demonstrate my abilities and skills through
           real-world examples of my work. Each project has a brief description

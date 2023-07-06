@@ -13,7 +13,7 @@ const Hero = () => {
       < div className={`${styles.heroHeadText} relative text-white  p-2`}>
         <div className='absolute heroContent text-left'>
           <h1 > <span className={`hover:text-[gray]`} >Hi, I'm </span> <span className={`text-[${mainColor}] hover:text-[gray]`}>Shishir</span></h1>
-          <p className={`${styles.heroSubText} text-secondary`}>
+          <p className={`${styles.heroSubText} text-gray-100`}>
             I develop user
             interfaces and web applications
           </p>
