@@ -251,28 +251,6 @@ const projects = [
     source_code_link: 'https://github.com/Shishir435/todo',
     live_demo_link: 'https://listsv1.onrender.com/',
   },
-
-  // {
-  //   name: 'Signup Form',
-  //   description:
-  //     'A signup form with a validation based on roll no and password',
-  //   tags: [
-  //     {
-  //       name: 'React',
-  //       color: 'blue-text-gradient',
-  //     },
-  //     {
-  //       name: 'firebase',
-  //       color: 'green-text-gradient',
-  //     },
-  //     {
-  //       name: 'materialUi',
-  //       color: 'pink-text-gradient',
-  //     },
-  //   ],
-  //   source_code_link: 'https://github.com/Shishir435/loginForm',
-  //   live_demo_link: 'https://fir-auth-9e239.web.app/',
-  // },
 ]
 
 export { services, technologies, projects }

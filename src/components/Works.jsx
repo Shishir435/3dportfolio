@@ -4,7 +4,7 @@ import { styles } from "../styles";
 import { github, website } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
+
 import { nanoid } from "nanoid";
 
 const ProjectCard = ({
@@ -35,7 +35,9 @@ const ProjectCard = ({
             <img
               src={github}
               alt="github"
-              className="w-1/2 h=1/2 object-contain"
+              height="40"
+              width="40"
+              className="w-1/2 h-1/2 object-contain"
             />
           </div>
           <div
@@ -45,7 +47,9 @@ const ProjectCard = ({
             <img
               src={website}
               alt="website"
-              className="w-1/2 h=1/2 object-contain"
+              height="40"
+              width="40"
+              className="w-1/2 h-1/2 object-contain"
             />
           </div>
         </div>
@@ -67,13 +71,13 @@ const ProjectCard = ({
 const Works = () => {
   return (
     <>
-      <div id="works" variants={textVariant()}>
+      <div id="works" >
         <p className={styles.sectionSubText}>My Works</p>
         <h2 className={styles.sectionHeadText}>Projects</h2>
       </div>
       <div className="w-full flex">
         <p
-          variants={fadeIn("", "", 0.1, 1)}
+         
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           The projects listed below demonstrate my abilities and skills through
